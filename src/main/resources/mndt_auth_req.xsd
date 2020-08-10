@@ -1,0 +1,105 @@
+<xs:schema attributeFormDefault="unqualified"
+	elementFormDefault="qualified"
+	targetNamespace="http://npci.org/onmags/schema"
+	xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:element name="Document">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="MndtAuthReq">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="GrpHdr">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element type="xs:string" name="NPCI_RefMsgId" />
+										<xs:element type="xs:dateTime" name="CreDtTm" />
+										<xs:element name="ReqInitPty">
+											<xs:complexType>
+												<xs:sequence>
+													<xs:element name="Info">
+														<xs:complexType>
+															<xs:sequence>
+																<xs:element type="xs:string" name="Id" />
+																<xs:element type="xs:string" name="CatCode" />
+																<xs:element type="xs:short" name="UtilCode" />
+																<xs:element type="xs:string" name="CatDesc" />
+																<xs:element type="xs:string" name="Name" />
+																<xs:element type="xs:string"
+																	name="Spn_Bnk_Nm" />
+															</xs:sequence>
+														</xs:complexType>
+													</xs:element>
+												</xs:sequence>
+											</xs:complexType>
+										</xs:element>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+							<xs:element name="Mndt">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element type="xs:string" name="MndtReqId" />
+										<xs:element type="xs:string" name="MndtId" />
+										<xs:element type="xs:string" name="Mndt_Type" />
+										<xs:element type="xs:string" name="Schm_Nm" />
+										<xs:element name="Ocrncs">
+											<xs:complexType>
+												<xs:sequence>
+													<xs:element type="xs:string" name="SeqTp" />
+													<xs:element type="xs:string" name="Frqcy" />
+													<xs:element type="xs:date" name="FrstColltnDt" />
+													<xs:element type="xs:date" name="FnlColltnDt" />
+												</xs:sequence>
+											</xs:complexType>
+										</xs:element>
+										<xs:element name="ColltnAmt">
+											<xs:complexType>
+												<xs:simpleContent>
+													<xs:extension base="xs:short">
+														<xs:attribute type="xs:string" name="Ccy" />
+													</xs:extension>
+												</xs:simpleContent>
+											</xs:complexType>
+										</xs:element>
+										<xs:element name="MaxAmt">
+											<xs:complexType>
+												<xs:simpleContent>
+													<xs:extension base="xs:short">
+														<xs:attribute type="xs:string" name="Ccy" />
+													</xs:extension>
+												</xs:simpleContent>
+											</xs:complexType>
+										</xs:element>
+										<xs:element name="Dbtr">
+											<xs:complexType>
+												<xs:sequence>
+													<xs:element type="xs:string" name="Nm" />
+													<xs:element type="xs:string" name="AccNo" />
+													<xs:element type="xs:string" name="Acct_Type" />
+													<xs:element type="xs:string" name="Cons_Ref_No" />
+													<xs:element type="xs:string" name="Phone" />
+													<xs:element type="xs:string" name="Mobile" />
+													<xs:element type="xs:string" name="Email" />
+													<xs:element type="xs:string" name="Pan" />
+												</xs:sequence>
+											</xs:complexType>
+										</xs:element>
+										<xs:element name="CrAccDtl">
+											<xs:complexType>
+												<xs:sequence>
+													<xs:element type="xs:string" name="Nm" />
+													<xs:element type="xs:string" name="AccNo" />
+													<xs:element type="xs:string" name="MmbId" />
+												</xs:sequence>
+											</xs:complexType>
+										</xs:element>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

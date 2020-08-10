@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Document xmlns="http://npci.org/onmags/schema">
+	<MndtAuthReq>
+		<GrpHdr>
+			<NPCI_RefMsgId>000f0f29dc27f00000101b09c5227457f17</NPCI_RefMsgId>
+			<CreDtTm>2017-02-09T15:12:39</CreDtTm>
+			<ReqInitPty>
+				<Info>
+					<Id>HDFC00001123456789</Id>
+					<CatCode>COO1</CatCode>
+					<UtilCode>6543</UtilCode>
+					<CatDesc>Insurance Company</CatDesc>
+					<Name>LIC</Name>
+					<Spn_Bnk_Nm>State Bank Of India</Spn_Bnk_Nm>
+				</Info>
+			</ReqInitPty>
+		</GrpHdr>
+		<Mndt>
+			<MndtReqId>000f0f29dc27f00000101b09c52b8e50037</MndtReqId>
+			<MndtId>UMRN</MndtId>
+			<Mndt_Type>DEBIT</Mndt_Type>
+			<Schm_Nm>ABC123</Schm_Nm>
+			<Ocrncs>
+				<SeqTp>RCUR</SeqTp>
+				<Frqcy>MNTH</Frqcy>
+				<FrstColltnDt>2017-04-05</FrstColltnDt>
+				<FnlColltnDt>2018-03-05</FnlColltnDt>
+			</Ocrncs>
+			<ColltnAmt Ccy="INR">1200</ColltnAmt>
+			<MaxAmt Ccy="INR">1200</MaxAmt>
+			<Dbtr>
+				<Nm>FAIROSE</Nm>
+				<AccNo>ACNo123456</AccNo>
+				<Acct_Type>SAVINGS</Acct_Type>
+				<Cons_Ref_No>XXX123</Cons_Ref_No>
+				<Phone>+91-XXX-XXXXXXXX</Phone>
+				<Mobile>+91-XXXXXXXXXX</Mobile>
+				<Email>XX@XX.COM</Email>
+				<Pan>XXXXX9999X</Pan>
+			</Dbtr>
+			<CrAccDtl>
+				<Nm>ABC India Limited</Nm>
+				<AccNo>ACNo78912340</AccNo>
+				<MmbId>HDFC0000001</MmbId>
+			</CrAccDtl>
+		</Mndt>
+	</MndtAuthReq>
+</Document>
